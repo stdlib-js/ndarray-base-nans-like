@@ -1,5 +1,5 @@
-"use strict";var n=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var u=n(function(N,a){
-var s=require('@stdlib/ndarray-base-assert-is-complex-floating-point-data-type/dist'),i=require('@stdlib/ndarray-base-empty-like/dist'),t=require('@stdlib/ndarray-base-fill/dist'),o=require('@stdlib/ndarray-base-dtype/dist'),p=require('@stdlib/constants-complex128-nan/dist');function q(r){return s(o(r))?t(i(r),p):t(i(r),NaN)}a.exports=q
-});var v=u();module.exports=v;
+"use strict";var s=function(r,e){return function(){try{return e||r((e={exports:{}}).exports,e),e.exports}catch(n){throw (e=0, n)}};};var u=s(function(c,a){
+var o=require('@stdlib/ndarray-base-assert-is-complex-floating-point-data-type/dist'),i=require('@stdlib/ndarray-base-empty-like/dist'),t=require('@stdlib/ndarray-base-fill/dist'),p=require('@stdlib/ndarray-base-dtype/dist'),q=require('@stdlib/constants-complex128-nan/dist');function v(r){return o(p(r))?t(i(r),q):t(i(r),NaN)}a.exports=v
+});var l=u();module.exports=l;
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map
