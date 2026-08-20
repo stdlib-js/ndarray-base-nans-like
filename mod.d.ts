@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2026 The Stdlib Authors.
@@ -16,39 +16,44 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { realcomplexndarray, genericndarray } from '@stdlib/types/ndarray';
 
 /**
-* Create a NaN-filled ndarray having the same shape and data type as a provided ndarray.
+* Creates a NaN-filled ndarray having the same shape and data type as a provided input ndarray.
 *
-* @module @stdlib/ndarray-base-nans-like
+* @param x - input array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray-shape' );
 * var getDType = require( '@stdlib/ndarray-dtype' );
-* var ones = require( '@stdlib/ndarray-ones' );
-* var nansLike = require( '@stdlib/ndarray-base-nans-like' );
+* var ones = require( '@stdlib/ndarray-base-ones' );
 *
-* var x = ones( [ 2, 2 ], {
-*     'dtype': 'float32'
-* });
+* var x = ones( 'float64', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>[ [ 1.0, 1.0 ], [ 1.0, 1.0 ] ]
+*
+* var sh = getShape( x );
+* // returns [ 2, 2 ]
+*
+* var dt = String( getDType( x ) );
+* // returns 'float64'
 *
 * var y = nansLike( x );
 * // returns <ndarray>[ [ NaN, NaN ], [ NaN, NaN ] ]
 *
-* var sh = getShape( y );
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* var dt = String( getDType( y ) );
-* // returns 'float32'
+* dt = String( getDType( y ) );
+* // returns 'float64'
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function nansLike<T extends realcomplexndarray | genericndarray<unknown>>( x: T ): T;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = nansLike;
