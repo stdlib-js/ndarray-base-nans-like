@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-20)
+## Unreleased (2026-09-23)
 
 <section class="features">
 
 ### Features
 
+-   [`123c0ed`](https://github.com/stdlib-js/stdlib/commit/123c0edfad02840cbe876c40338841990f426836) - add float16 dtype support to `ndarray/base/nans-like` [(#15449)](https://github.com/stdlib-js/stdlib/pull/15449)
 -   [`17d522f`](https://github.com/stdlib-js/stdlib/commit/17d522f0eb85a41c1e5e265fdab34cc4b4aa8ffd) - add `ndarray/base/nans-like`
 
 </section>
@@ -22,6 +23,7 @@
 
 <details>
 
+-   [`123c0ed`](https://github.com/stdlib-js/stdlib/commit/123c0edfad02840cbe876c40338841990f426836) - **feat:** add float16 dtype support to `ndarray/base/nans-like` [(#15449)](https://github.com/stdlib-js/stdlib/pull/15449) _(by Samarth Kolarkar)_
 -   [`0293981`](https://github.com/stdlib-js/stdlib/commit/0293981bc2e4dcdf3ec3f570c9326c049fe40b2c) - **docs:** replace \"array\" with \"ndarray\" in various type declarations [(#12828)](https://github.com/stdlib-js/stdlib/pull/12828) _(by Philipp Burckhardt)_
 -   [`17d522f`](https://github.com/stdlib-js/stdlib/commit/17d522f0eb85a41c1e5e265fdab34cc4b4aa8ffd) - **feat:** add `ndarray/base/nans-like` _(by Athan Reines)_
 
@@ -35,10 +37,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Philipp Burckhardt
+-   Samarth Kolarkar
 
 </section>
 
